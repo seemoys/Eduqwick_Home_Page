@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&family=Lobster&family=Pacifico&family=Signika+Negative&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 5px 1px 1px;
+  background-color: #9d9df368;
+  height: 95px;
+  box-shadow: 0 0 25px 0 black;
+  border-radius: 0 0 10px 10px;
+}
+
+.anchors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+  width: 50%;
+}
+.top-anchors ul {
+  display: flex;
+  gap: 2rem;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+.top-anchors ul li:hover {
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.bottom-anchors {
+  display: flex;
+  display: flex;
+  gap: 2rem;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+.bottom-anchors a:hover{
+  border-top: 3px solid #ff44008c;
+}
+.connects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-family: "Signika Negative", sans-serif;
+  font-size: 18px;
+  /* letter-spacing: 1px; */
+}
+.login-signup {
+  display: flex;
+  gap: 1rem;
+}
+.dropdown-container {
+  width: 100%;
+  height: 20rem;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9d4;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 0;
+  border-radius: 0 0 25px 25px;
+}
+
+.one:hover .dropdown-container {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  left: 0;
+  top: 85px;
+}
+.dropdown-content {
+  margin-top: 5rem;
+}
+.dropdown-content ul li:hover {
+  background-color: #ff44008c;
+  border-radius: 5px;
+}
+.two:hover .dropdown-container {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  left: 0;
+  top: 85px;
+}
+
+.three:hover .dropdown-container {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  left: 0;
+  top: 85px;
+}
+.four:hover .dropdown-container {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  left: 0;
+  top: 85px;
+}
+.five:hover .dropdown-container {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  left: 0;
+  top: 85px;
+}
+/* Navigation Ends Here */
+
+/* Hero Section */
+
+.hero-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  z-index: 0;
+  margin-top: 5rem;
+}
+.hero-items h2 {
+  font-size: 2.3rem;
+  color: black;
+  text-shadow: 3px 3px white;
+  opacity: 1;
+  font-weight: 900;
+  font-family: "Lobster", cursive;
+}
+.hero-items input {
+  width: 35rem;
+  height: 2.7rem;
+  background-color: #ffffffc3;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  opacity: 1;
+  font-family: cursive;
+  box-shadow: 3px 3px 10px #0000ff6f;
+  border: none;
+  text-align: center;
+}
+.hero-items input:hover {
+  box-shadow: -3px -3px 10px #0000ff76;
+  border: none;
+}
+.hero-items button {
+  cursor: pointer;
+  width: 15rem;
+  height: 2.5rem;
+  font-size: 1.7rem;
+  font-family: cursive;
+  /* font-weight: 900; */
+  /* text-transform: uppercase; */
+  box-shadow: 0 0 50px 0 black;
+  border-radius: 15px;
+  border: 1px solid black;
+  background-color: #ffffffa0;
+  opacity: 1;
+  font-family: "Lobster", cursive;
+}
+.hero-items button:hover {
+  background-color: #3f3ff775;
+  color: white;
+  box-shadow: -10px -10px 25px black;
+  text-shadow: 1px 1px 15px blue;
+}
+
+/* Footer */
+footer i {
+  font-size: 4rem;
+  background-color: #22e522aa;
+  color: white;
+  border-radius: 50%;
+  position: relative;
+  top: 10rem;
+  left: 80rem;
+  cursor: pointer;
+}
+footer i:hover {
+  font-size: 5rem;
+  background-color: white;
+  color: #22e522;
+  border-radius: 50%;
+  position: relative;
+  top: 10rem;
+  left: 80rem;
+  cursor: pointer;
+}
+
+/* Animation */
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: url(./Assets/animate1.jpg);
+  background-size: 100% 100%;
+  position: relative;
+  background-blend-mode: lighten;
+  animation: slider 25s infinite;
+}
+@keyframes slider {
+  5% {
+    background-image: url(./Assets/animate2.jpg);
+  }
+  20% {
+    background-image: url(./Assets/animate3.jpg);
+  }
+  40% {
+    background-image: url(./Assets/animate4.jpg);
+  }
+  60% {
+    background-image: url(./Assets/animate5.jpg);
+  }
+  80% {
+    background-image: url(./Assets/animate6.jpg);
+  }
+  100% {
+    background-image: url(./Assets/animate7.jpg);
+  }
+}
